@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UdacityMovieApp</string>
+    <string name="movie_thumbnail_image">movie thumbnail image</string>
+    <string name="release_date_string">Release Date</string>
+    <string name="vote_rating">Vote Average</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="popularity">Most popular</string>
+    <string name="highest_rated">Highest rated</string>
+</resources>
