@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     MovieAdapter movieAdapter;
     RecyclerView recyclerView;
     ArrayList<Movie> movies;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         movieAdapter = new MovieAdapter(this, movies);
         movieAdapter.setMovieClickListener(this);
         recyclerView.setAdapter(movieAdapter);
+
     }
 
     public void sendRequest(String baseUrl) {
