@@ -12,7 +12,8 @@
         <activity android:name=".view.DetailActivity"
             android:parentActivityName=".view.MainActivity">
         </activity>
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
